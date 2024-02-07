@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-content: center;
+    background-color:blanchedalmond;
+}
+#dsi{
+    display: inline;
+}
+
+.heading{
+    
+        font-family: 'Arial', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        /* margin-top: 50px; */
+        margin-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-decoration: solid;
+        color: #d8e2ed; /* Blue color; */
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+        border: 1px solid white;
+        background-color: black;
+}
+
+h1:hover{
+    color: rgb(27, 138, 90);
+}
+.dsac{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 230px;
+    text-overflow: initial;
+    width: 350px;
+    position: relative;
+    box-sizing: border-box;
+    background-color:darkcyan;
+    /* display: flex;
+    display: inline; */
+}
+
+.cc{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 230px;
+    width: 350px;
+    position: relative;
+    box-sizing: border-box;
+}
+.javac{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 230px;
+    width: 350px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.dbms{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 230px;
+    width: 350px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.python{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    height: 230px;
+    width: 350px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.parent2 {
+    display: flex;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}

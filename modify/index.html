@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurukul Shikshan Sansthan | Coaching Institute</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="div-nav">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="Gallery/index.html" target="_blank">Gallery</a></li>
+        <li><a href="course/resourse.html" target="_blank">Courses</a></li>
+        <li><a href="Admissionform/index.html" target="_blank">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.toggle-button');
+      const navLinks = document.querySelector('.nav-links');
+
+      toggleButton.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
+      });
+    });
+  </script>
+
+  <div class="slideshow-container" id="home">
+    <div class="iambrpslides fade">
+      <div class="numbertext">01 / 03</div>
+      <img src="12.jpeg" />
+    </div>
+
+    <div class="iambrpslides fade">
+      <div class="numbertext">02 / 03</div>
+      <img src="5.jpg" />
+    </div>
+
+    <div class="iambrpslides fade">
+      <div class="numbertext">03 / 03</div>
+      <img src="4.jpg" />
+    </div>
+  </div>
+
+  <div style="text-align: center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("iambrpslides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 500); // This is for Changing image every 8.5 seconds
+    }
+  </script>
+
+  <main>
+    </section>
+
+    <section class="hero">
+      <h2>Achieve your academic goals with expert coaching.</h2>
+      <br />
+      <p>
+        We offer comprehensive coaching programs for all major academic
+        subjects, from elementary school to college. Our experienced and
+        qualified teacher's will help you master the material, develop your
+        study skills, and build the confidence you need to succeed.
+      </p>
+      <br />
+      <br />
+      <a href="/contact" class="btn">Book your free demo class today!</a>
+    </section>
+
+    <section id="about" class="benefits">
+      <h2>Why choose Gurukul Shikshan Sansthan?</h2>
+      <ul>
+        <li>Expert coaching from experienced and qualified professionals.</li>
+        <li>
+          Personalized instruction plans developed by experienced and
+          qualified teachers.
+        </li>
+        <li>A supportive and encouraging learning environment.</li>
+        <li>
+          Proven results - our students consistently achieve high grades and
+          test scores.
+        </li>
+        <li>Flexible scheduling to fit your needs or Affordable rates.</li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <h2>What our students say</h2>
+      <div class="test">
+        <blockquote>
+          "Gurukul Shikshan Sansthan helped me improve my math grade from a C-
+          to an A. My teacher was patient and supportive, and he really helped
+          me understand the material. I highly recommend Gurukul Shikshan
+          Sansthan to any student who wants to succeed in school."
+        </blockquote>
+        <br />
+        - Shreya Dixit
+      </div>
+      <div class="test">
+        <blockquote>
+          "I was struggling in math, but my coach at Gurukul Shikshan Sansthan
+          helped me turn things around. He broke down the concepts in a way
+          that I could understand, and he gave me lots of practice problems.
+          I'm now passing math with flying colors, and I'm so grateful for
+          Gurukul Shikshan Sansthan's help."
+        </blockquote>
+        <br />
+        - Riya Singh
+      </div>
+    </section>
+
+    <section id="faculty" class="faculty">
+      <h2>Our Faculty</h2>
+      <br />
+      <div class="teacher-photos">
+        <!-- Teacher 1 -->
+        <div class="teacher-photo">
+          <img src="teacher_img.jpg" alt="Teacher 1" />
+          <div class="teacher-details">
+            <h3>Teacher 1</h3>
+            <p>Qualification: Master of Arts in English</p>
+            <p>Experience: 5 years</p>
+          </div>
+        </div>
+
+        <!-- Teacher 2 -->
+        <div class="teacher-photo">
+          <img src="teacher_img.jpg" alt="Teacher 2" />
+          <div class="teacher-details">
+            <h3>Teacher 2</h3>
+            <p>Qualification: Master of Science in Mathematics</p>
+            <p>Experience: 7 years</p>
+          </div>
+        </div>
+
+        <!-- Teacher 3 -->
+        <div class="teacher-photo">
+          <img src="teacher_img.jpg" alt="Teacher 3" />
+          <div class="teacher-details">
+            <h3>Teacher 3</h3>
+            <p>Qualification: Master of Science in Physics</p>
+            <p>Experience: 8 years</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to get started?</h2>
+      <br />
+      <br />
+      <a href="/contact" class="btn">Book your free demo class today!</a>
+    </section>
+
+    <section class="map">
+      <h2>Coaching Institute location</h2>
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1471.3738253860681!2d80.2204542521882!3d26.55706308673667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c31ec38886877%3A0x26633b06cb4e9fa0!2z4KSX4KWB4KSw4KWB4KSV4KWB4KSyIOCktuCkv-CkleCljeCkt-CkoyDgpLjgpILgpLjgpY3gpKXgpL7gpKg!5e0!3m2!1sen!2sin!4v1696349216356!5m2!1sen!2sin"
+        width="100%" height="300" style="border: 2" allowfullscreen="" loading="fast"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+  </main>
+  <!-- Inside your <main> element, after the existing sections -->
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>
+        If you have any questions or need further information, please feel
+        free to contact us:
+      </p>
+      <ul>
+        <li>Email: Gurukul@gmail.com</li>
+        <li>Phone: +91 7007864852</li>
+        <li>Address: BPMG Inter college Mandhana Kanpur</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <form action="process_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- Inside your <footer> element, for example -->
+  <footer>
+    <div class="social-media">
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <!-- Add more social media links/icons as needed -->
+    </div>
+    <p>Copyright &copy; 2023 Gurukul Shikshan Sansthan</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gurukul Shikshan Sansthan | Coaching Institute | Admissionform</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="admission.php" class="form"  method="POST">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter full name" required name="fullName"/>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" id="email" placeholder="Enter email address" required name="email"/>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number" id="phoneNumber" placeholder="Enter phone number" required name="phoneNumber"/>
+                </div>
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" id="birthDate" placeholder="Enter birth date" required name="birthDate"/>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="m" checked  />
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="f" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="o" />
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

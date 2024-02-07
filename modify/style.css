@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: steelblue;
+  color: white;
+}
+
+/* General styles for the navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.div-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Toggle button styles */
+.toggle-button {
+  display: none; /* Hide button initially on larger screens */
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  /* background-color: #fff; */
+  color: red;
+  border-radius: 5px;
+  font: 1em sans-serif;
+  
+   
+}
+
+/* Styles for smaller screens (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start for vertical layout */
+    position: relative;
+  }
+  
+  .nav-links {
+    display: none; /* Hide menu links on smaller screens */
+    flex-direction: column; /* Stack links vertically */
+    /* position: absolute; */
+    top: 60px; /* Adjust the top position based on your design */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: 20px;
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show menu links when open */
+    height: auto; /* Adjust the height based on content */
+
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3px; /* Adjust spacing between columns */
+    /* margin-top: 0px; */
+  }
+
+  .toggle-button {
+    display: block; /* Show toggle button on smaller screens */
+    position: fixed; /* Fix the button at the top */
+    top: 10px; /* Adjust the top position based on your design */
+    left: 10px; /* Adjust the left position based on your design */
+    z-index: 2; /* Ensure toggle button is above the menu */
+  }
+
+  /* Adjust the styling of the toggle button bars for the open state */
+  .toggle-button.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle-button.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+
+ 
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-variant: small-caps;
+  word-spacing: 0.25em;
+}
+
+span {
+  color: yellow;
+  font-size: x-large;
+  font-style: italic;
+  text-transform: uppercase;
+
+}
+
+.iambrpslides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+}
+img{
+	width: 100%;
+	height: 650px;
+   
+}
+
+
+/* Main */
+
+main {
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+
+
+/* Hero section */
+
+.hero {
+
+  padding: 60px 0;
+  text-align: center;
+  border-collapse: separate;
+
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-size: 1rem;
+  color: white;
+}
+
+.btn {
+  background-color: #eff0fa;
+  color: #ea2121;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 55px;
+  float: center;
+  margin-bottom: 20px;
+  text-decoration-style: none;
+  text-decoration: none;
+}
+
+/* Benefits section */
+
+.benefits {
+  padding: 60px 0;
+  margin: 30px 0px;
+  text-align: justify;
+
+}
+
+ul {
+  list-style-type: circle;
+  padding: 20px;
+}
+
+li {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials section */
+
+.testimonials {
+  padding: 30px 0;
+  background-color: rgba(43, 70, 43, 0.048);
+}
+
+.test {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 10px 10px 10px;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;  
+}
+
+/* Teacher photos */
+
+.teacher-photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.teacher-photo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.teacher-photo:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Teacher details container */
+.teacher-details-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.teacher-photo:hover .teacher-details-container {
+  opacity: 1;
+  visibility: visible;
+}
+
+.teacher-details {
+  text-align: center;
+}
+
+.teacher-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.teacher-details p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* CTA section */
+
+.cta {
+  margin-top: 55px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Map section */
+.map {
+  padding: 30px 0;
+}
+
+/* Contact Us Section Styles */
+.contact {
+  height: 700px;
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgb(119, 173, 218);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+
+}
+
+.contact-form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button[type="submit"] {
+  background-color: white;
+  color: red;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 55px;
+  font-size: 1.1rem;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0e1eab;
+  color: aqua;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  background-color: #333;
+}
+
+/* Social Media Icons Styles */
+.social-media {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #555;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007bff;
+  /* Change to your desired hover color */
+}
